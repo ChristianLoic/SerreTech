@@ -6,8 +6,34 @@
     <ion-title>home</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content>
-  <div class="bg-vertBill text-black">
-    mdr
+<ion-content scroll-y="false">
+  <div  class="flex flex-wrap items-end  justify-center  w-full h-full background-image " >
+
+
+    <!--LOGO --->
+    <div class="  h-2/3 w-5/6  flex  justify-center  items-center ">
+
+      <img alt="" src="/assets/images/LogoV2.png">
+
+
+    </div>
+
+    <!--LOGO --->
+    <!--BOUTON --->
+    <div  class="flex  justify-center items-center w-full h-1/6    ">
+
+
+
+
+
+
+      <button class="w-1/2   transition-colors duration-500 transform bg-white bg-green-100  rounded-lg h-1/4  text-vertBill hover:bg-yellow-700 hover:text-gray-100 " routerDirection="root" [routerLink]="['/login']">CONNEXION </button>
+
+
+
+    </div>
+
+    <!--!BOUTON --->
+
   </div>
 </ion-content>
