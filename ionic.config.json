@@ -1,0 +1,7 @@
+{
+  "name": "SerreTech",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
