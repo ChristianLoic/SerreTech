@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+
+////MES IMPORTS //
+import { serres } from '../serres';
+
 @Component({
   selector: 'app-serre-list',
   templateUrl: './serre-list.page.html',
@@ -7,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SerreListPage implements OnInit {
 
+  serres = serres;
   constructor() { }
 
   ngOnInit() {
