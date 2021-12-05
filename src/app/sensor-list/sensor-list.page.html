@@ -6,3 +6,42 @@
     <ion-title>sensor-list</ion-title>
   </ion-toolbar>
 </ion-header>
+
+<ion-content>
+  <div class=" label  w-full h-1/6 flex items-center justify-center font-bold  ">
+
+   <h1> SERRE #{{serre.idSerre}} </h1>
+
+  </div>
+   <div class=" flex w-full h-2/3 ">
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeLg="4" sizeMd="4" sizeXs="6" >
+        <div  class="bg-pink-500 shadow-2xl"> 44445
+        </div>
+      </ion-col>
+      <ion-col sizeLg="4" sizeMd="4" sizeXs="6" >
+        <div  class="bg-pink-500 shadow-2xl"> 44444
+        </div>
+      </ion-col>
+      <ion-col sizeLg="4" sizeMd="4" sizeXs="6" >
+        <div  class="bg-pink-500 shadow-2xl">
+          555
+        </div>
+      </ion-col>
+      <ion-col sizeLg="4" sizeMd="4" sizeXs="6" >
+        <div  class="bg-pink-500 shadow-2xl">
+          494
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+  <div class="flex justify-center items-center w-full h-1/6 items-center ">
+
+    <input  type="submit" value="carte" class="w-1/2 transition-colors duration-500 transform shadow-2xl text-yellow-700 rounded-lg h-1/2 text-vertBill hover:bg-yellow-700 hover:text-gray-100 " [routerLink]="['/map']"  >
+
+
+  </div>
+
+</ion-content>

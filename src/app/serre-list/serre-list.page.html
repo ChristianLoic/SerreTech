@@ -1,8 +1,65 @@
-<ion-header>
-  <ion-toolbar>
+<ion-header >
+  <ion-toolbar color="primary" >
     <ion-buttons slot="start">
       <ion-menu-button autoHide="false"></ion-menu-button>
     </ion-buttons>
     <ion-title>serre-list</ion-title>
+    <ion-icon slot="icon-only" name="leaf-outline"></ion-icon>
   </ion-toolbar>
 </ion-header>
+<ion-content scroll-y="true">
+<ion-card *ngFor="let serre of serres" id="listcard"   >
+
+  <ion-card-header>
+    <ion-card-subtitle  class="ion-text-end  ion-align-self-start " > SERRE #{{serre.idSerre}}</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-grid >
+            <ion-row class="" >
+                    <ion-col >
+                      gauche
+                      <ion-row>
+                        <ion-col>
+                        <ion-icon name="home"></ion-icon>
+                      </ion-col>
+                      </ion-row>
+                      <ion-row><ion-col class=" ">
+
+
+<!--<ion-item class="border border-black bg-black  flex justify-center items-center ion- ">
+  details
+</ion-item>-->
+                        <button class="  transition-colors duration-500 transform bg-transparent w-full  h-full rounded-md border border-white  shadow-2xlr text-xs text-yellow-700 hover:bg-yellow-700 hover:text-gray-100 " routerDirection="root" [routerLink]="['/serres', serre.idSerre]">DETAILS </button>
+
+
+                      </ion-col></ion-row>
+                    </ion-col>
+                    <ion-col >
+
+                      droite
+                      <ion-row>
+                        <ion-col >1 L: {{serre.luminosite}}</ion-col>
+                        <ion-col>2 T: {{serre.temperature}}</ion-col>
+                      </ion-row>
+                      <ion-row>
+                        <ion-col>3 S: {{serre.humiditeSol}}</ion-col>
+                        <ion-col>4  A:{{serre.humiditeAir}}</ion-col>
+                      </ion-row>
+                    </ion-col>
+             </ion-row>
+
+    </ion-grid>
+  </ion-card-content>
+</ion-card >
+<!--
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeLg="4" sizeMd="4" sizeXs="12" *ngFor="let serre of serres" id="listcard">
+        <ion-card class="ion-justify-content-around" >
+          serre # {{serre.idSerre}}
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>-->
+
+</ion-content>
