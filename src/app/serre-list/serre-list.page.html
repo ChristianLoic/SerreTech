@@ -7,49 +7,61 @@
     <ion-icon slot="icon-only" name="leaf-outline"></ion-icon>
   </ion-toolbar>
 </ion-header>
-<ion-content scroll-y="true">
+<ion-content scroll-y="false">
 <ion-card *ngFor="let serre of serres" id="listcard"   >
-
+ <div class="">
   <ion-card-header>
-    <ion-card-subtitle  class="ion-text-end  ion-align-self-start " > SERRE #{{serre.idSerre}}</ion-card-subtitle>
+    <ion-card-subtitle  class="ion-text-start   " >
+         <ion-text>
+               <h1>
+                   SERRE #{{serre.idSerre}}
+              </h1>
+                   </ion-text>
+    </ion-card-subtitle>
   </ion-card-header>
   <ion-card-content>
     <ion-grid >
-            <ion-row class="" >
-                    <ion-col >
-                      gauche
-                      <ion-row>
-                        <ion-col>
-                        <ion-icon name="home"></ion-icon>
-                      </ion-col>
-                      </ion-row>
-                      <ion-row><ion-col class=" ">
+          <ion-row class="" >
+              <ion-col  >
+                gauche
+                <ion-row   >
+                  <ion-col >
+                     <!--<ion-icon name="home">
 
+                  </ion-icon>-->
 
-<!--<ion-item class="border border-black bg-black  flex justify-center items-center ion- ">
-  details
-</ion-item>-->
-                        <button class="  transition-colors duration-500 transform bg-transparent w-full  h-full rounded-md border border-white  shadow-2xlr text-xs text-yellow-700 hover:bg-yellow-700 hover:text-gray-100 " routerDirection="root" [routerLink]="['/serres', serre.idSerre]">DETAILS </button>
+                    <div class="w-full h-full flex ">
+                     <img src="../../assets/images/serre.png" class="object-contain" alt="serre">
+                    </div>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col class=" ">
+                     <button
+                    class="  transition-colors duration-500 transform bg-transparent w-full  h-full rounded-md border border-white  shadow-2xlr text-xs text-yellow-700 hover:bg-yellow-700 hover:text-gray-100 " routerDirection="root" [routerLink]="['/serres', serre.idSerre]">
+                    DETAILS
+                  </button>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+              <ion-col >
+                <div class="bg-blue-800 h-full w-full">
 
+                    <ion-row>
+                      <ion-col size="6" >1L:{{serre.luminosite}}</ion-col>
+                      <ion-col size="6">2T:{{serre.temperature}}</ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col size="6">3S:{{serre.humiditeSol}}</ion-col>
+                      <ion-col size="6">4A:{{serre.humiditeAir}}</ion-col>
+                    </ion-row>
+                </div>
+                  </ion-col>
 
-                      </ion-col></ion-row>
-                    </ion-col>
-                    <ion-col >
-
-                      droite
-                      <ion-row>
-                        <ion-col >1 L: {{serre.luminosite}}</ion-col>
-                        <ion-col>2 T: {{serre.temperature}}</ion-col>
-                      </ion-row>
-                      <ion-row>
-                        <ion-col>3 S: {{serre.humiditeSol}}</ion-col>
-                        <ion-col>4  A:{{serre.humiditeAir}}</ion-col>
-                      </ion-row>
-                    </ion-col>
-             </ion-row>
-
-    </ion-grid>
+           </ion-row>
+     </ion-grid>
   </ion-card-content>
+ </div>
 </ion-card >
 <!--
   <ion-grid>

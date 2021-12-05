@@ -32,7 +32,7 @@ export class AppComponent {
     },
     {
       title: 'serre-list',
-      url: '/serre-list',
+      url: '/serres',
       icon: 'list'
     },
     {
