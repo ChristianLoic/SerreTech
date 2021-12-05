@@ -28,7 +28,7 @@ const routes: Routes = [
     loadChildren: () => import('./sensor-list/sensor-list.module').then( m => m.SensorListPageModule)
   },
   {
-    path: 'serre-list',
+    path: 'serres',
     loadChildren: () => import('./serre-list/serre-list.module').then( m => m.SerreListPageModule)
   },
   {
