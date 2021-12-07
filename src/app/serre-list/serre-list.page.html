@@ -58,7 +58,7 @@
                     <ion-row>
                       <ion-col size="6" >
 <!--
-                        1L:{{serre.luminosite}}
+                        1L:{{serre. luminosite}}
 -->                               <div class="w-full h-full flex ">
                         <img src="../../assets/images/soleil.png" class="object-contain" alt="serre">
                       </div>
@@ -66,7 +66,7 @@
                       <ion-col size="6">
 <!--
                         2T:{{serre.temperature}}
--->                        <div class=" flex justify-center items-center ">
+-->                        <div class=" flex w-1/2 justify-center items-center ">
                         <img src="../../assets/images/thermometre.png" class="object-contain flex items-center w-full" alt="serre">
                       </div>
                       </ion-col>
@@ -75,15 +75,15 @@
                       <ion-col size="6">
 <!--
                         3S:{{serre.humiditeSol}}
--->                      <div class="w-full h-full flex ">
-                        <img src="../../assets/images/humidité%20sol.png" class="object-contain" alt="serre">
+-->                      <div class="w-1/2 h-full flex ">
+                        <img src="../../assets/images/goutte.png" class="object-contain" alt="serre">
                       </div>
                       </ion-col>
                       <ion-col size="6">
 <!--
                         4A:{{serre.humiditeAir}}
--->                           <div class="w-full h-full flex ">
-                        <img src="../../assets/images/humidité%20air.png" class="object-contain" alt="serre">
+-->                           <div class="w-1/2 h-full flex ">
+                        <img src="../../assets/images/goutte.png" class="object-contain" alt="serre">
                       </div>
                       </ion-col>
                     </ion-row>
@@ -94,16 +94,24 @@
      </ion-grid>
   </ion-card-content>
  </div>
-</ion-card >
-<!--
-  <ion-grid>
-    <ion-row>
-      <ion-col sizeLg="4" sizeMd="4" sizeXs="12" *ngFor="let serre of serres" id="listcard">
-        <ion-card class="ion-justify-content-around" >
-          serre # {{serre.idSerre}}
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>-->
+  </ion-card >
 
-</ion-content>
+
+    <!--
+
+
+        <ion-grid>
+          <ion-row>
+            <ion-col sizeLg="4" sizeMd="4" sizeXs="12" *ngFor="let serre of serres" id="listcard">
+              <ion-card class="ion-justify-content-around" >
+                serre # {{serre.idSerre}}
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+
+      -->
+
+
+  </ion-content>
