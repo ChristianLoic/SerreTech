@@ -13,31 +13,60 @@
    <h1> SERRE #{{serre.idSerre}} </h1>
 
   </div>
-   <div class=" flex w-full h-2/3 ">
+   <div class=" w-full  ">
   <ion-grid>
-    <ion-row>
+     <!--  <ion-row>
+         <ion-col size="6" >
+              <div  class="bg-pink-500 shadow-2xl   flex  justify-center">
+                <img src="../../assets/images/goutte.png" class="" alt="serre">
+              </div>
+        </ion-col>
+        <ion-col sizeLg="4" sizeMd="4" sizeXs="6" >
+        <div  class="bg-pink-500 shadow-2xl  h-1/2 flex  justify-center">
+          <img src="../../assets/images/goutte.png" class="" alt="serre">
+        </div>
+        </ion-col>
+       </ion-row>
+
+
+      <ion-row>
       <ion-col sizeLg="4" sizeMd="4" sizeXs="6" >
-        <div  class="bg-pink-500 shadow-2xl"> 44445
+        <div  class="bg-pink-500 shadow-2xl  h-1/2 flex  justify-center">
+          <img src="../../assets/images/goutte.png" class="" alt="serre">
         </div>
       </ion-col>
       <ion-col sizeLg="4" sizeMd="4" sizeXs="6" >
-        <div  class="bg-pink-500 shadow-2xl"> 44444
+        <div  class="bg-pink-500 shadow-2xl  h-1/2 flex  justify-center">
+          <img src="../../assets/images/goutte.png" class="" alt="serre">
         </div>
       </ion-col>
-      <ion-col sizeLg="4" sizeMd="4" sizeXs="6" >
-        <div  class="bg-pink-500 shadow-2xl">
-          555
-        </div>
+    </ion-row>-->
+    <ion-row class="row-card">
+      <ion-col size="6" class="col-card shadow-2xl bg-transparent">
+        <ion-card class="card-service">
+          <img alt="" src="../../assets/images/soleil.png" class="img-service" />
+        </ion-card>
       </ion-col>
-      <ion-col sizeLg="4" sizeMd="4" sizeXs="6" >
-        <div  class="bg-pink-500 shadow-2xl">
-          494
-        </div>
+      <ion-col size="6" class="col-card shadow-2xl">
+        <ion-card class="card-service">
+          <img alt="" src="../../assets/images/thermometre.png" class="img-service" />
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" class="col-card shadow-2xl">
+        <ion-card class="card-service ">
+          <img  alt="" src="../../assets/images/goutte.png" class="img-service " />
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" class="col-card shadow-2xl">
+        <ion-card class="card-service  ">
+          <img alt=""  src="../../assets/images/goutte.png" class="img-service h-" />
+        </ion-card>
       </ion-col>
     </ion-row>
+
   </ion-grid>
 </div>
-  <div class="flex justify-center items-center w-full h-1/6 items-center ">
+  <div class="flex flex-wrap justify-center items-center w-full h-1/6 items-center justify-center  ">
 
     <input  type="submit" value="carte" class="w-1/2 transition-colors duration-500 transform shadow-2xl text-yellow-700 rounded-lg h-1/2 text-vertBill hover:bg-yellow-700 hover:text-gray-100 " [routerLink]="['/map']"  >
 
