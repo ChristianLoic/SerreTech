@@ -12,56 +12,45 @@
 
    <h1> SERRE #{{serre.idSerre}} </h1>
 
+
   </div>
    <div class=" w-full  ">
   <ion-grid>
-     <!--  <ion-row>
-         <ion-col size="6" >
-              <div  class="bg-pink-500 shadow-2xl   flex  justify-center">
-                <img src="../../assets/images/goutte.png" class="" alt="serre">
-              </div>
-        </ion-col>
-        <ion-col sizeLg="4" sizeMd="4" sizeXs="6" >
-        <div  class="bg-pink-500 shadow-2xl  h-1/2 flex  justify-center">
-          <img src="../../assets/images/goutte.png" class="" alt="serre">
-        </div>
-        </ion-col>
-       </ion-row>
 
-
-      <ion-row>
-      <ion-col sizeLg="4" sizeMd="4" sizeXs="6" >
-        <div  class="bg-pink-500 shadow-2xl  h-1/2 flex  justify-center">
-          <img src="../../assets/images/goutte.png" class="" alt="serre">
-        </div>
-      </ion-col>
-      <ion-col sizeLg="4" sizeMd="4" sizeXs="6" >
-        <div  class="bg-pink-500 shadow-2xl  h-1/2 flex  justify-center">
-          <img src="../../assets/images/goutte.png" class="" alt="serre">
-        </div>
-      </ion-col>
-    </ion-row>-->
     <ion-row class="row-card">
-      <ion-col size="6" class="col-card shadow-2xl bg-transparent">
+      <!--<ion-col size="6" class="col-card shadow-2xl ">
         <ion-card class="card-service">
-          <img alt="" src="../../assets/images/soleil.png" class="img-service" />
-        </ion-card>
-      </ion-col>
-      <ion-col size="6" class="col-card shadow-2xl">
-        <ion-card class="card-service">
-          <img alt="" src="../../assets/images/thermometre.png" class="img-service" />
+          <ion-img alt="" src="../../assets/images/soleil.png" class="img-service" ></ion-img>
+          <ion-label class="ion-t"> 20 F</ion-label>
         </ion-card>
       </ion-col>
       <ion-col size="6" class="col-card shadow-2xl">
         <ion-card class="card-service ">
-          <img  alt="" src="../../assets/images/goutte.png" class="img-service " />
+          <ion-img alt="" src="../../assets/images/thermometre.png" class="img-service" ></ion-img>
+          <ion-label class="ion-t"> 20 F</ion-label>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" class="col-card shadow-2xl">
+        <ion-card class="card-service ">
+          <ion-img  alt="" src="../../assets/images/goutte.png" class="img-service " ></ion-img>
+          <ion-label class="ion-t"> 20 F</ion-label>
         </ion-card>
       </ion-col>
       <ion-col size="6" class="col-card shadow-2xl">
         <ion-card class="card-service  ">
-          <img alt=""  src="../../assets/images/goutte.png" class="img-service h-" />
+          <ion-img alt=""  src="../../assets/images/goutte.png" class="img-service h-" > </ion-img>
+          <ion-label class="ion-t" > 20 F</ion-label>
         </ion-card>
+      </ion-col>-->
+      <ion-col size="6" class="col-card shadow-2xl " *ngFor="let ages of Ages ">
+
+        <ion-card class="card-service  ">
+          <ion-img alt=""  src="../../assets/images/{{ages.img}}" class="img-service h-" > </ion-img>
+          <ion-label class="ion-t" >  {{ages.value}}</ion-label>
+        </ion-card>
+
       </ion-col>
+
     </ion-row>
 
   </ion-grid>

@@ -4,6 +4,7 @@ export interface Serre {
   humiditeSol:number;
   humiditeAir: number;
   luminosite:number;
+  temperature:number;
   idProfil: number;
 }
 

@@ -18,16 +18,43 @@ export class SensorListPage implements OnInit {
   sensors = sensors;
   serres = serres;
   serre : Serre | undefined;
+  Ages: { value : number ,name: string , img :string}[];
+
 
   constructor(private route: ActivatedRoute) { }
 
-  ngOnInit() {
-    // First get the serre id from the current route.
-    const routeParams = this.route.snapshot.paramMap;
-    const serreIdFromRoute = Number(routeParams.get('idSerre'));
+  ngOnInit()
+{
+          // First get the serre id from the current route.
+          const routeParams = this.route.snapshot.paramMap;
+          const serreIdFromRoute = Number(routeParams.get('idSerre'));
 
-    // Find the product that correspond with the id provided in route.
-    this.serre = serres.find(serre => serre.idSerre === serreIdFromRoute);
+          // Find the product that correspond with the id provided in route.
+          this.serre = serres.find(serre => serre.idSerre === serreIdFromRoute);
+
+            this.Ages = [
+                              {
+                                value: this.serre.luminosite,
+                                name: 'luminosite',
+                                img :'soleil.png'
+                              },
+                              {
+                                value: this.serre.temperature,
+                                name: 'temperature',
+                                img :'thermometre.png'
+                              },
+                              {
+                                value: this.serre.humiditeSol,
+                                name: 'humiditeSol',
+                                img :'goutte.png'
+                              },
+                              {
+                                value: this.serre.humiditeAir,
+                                name: 'humiditeAir',
+                                img :'goutte.png'
+                              },
+
+                         ];
   }
 
 }
