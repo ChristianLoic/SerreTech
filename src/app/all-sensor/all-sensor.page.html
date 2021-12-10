@@ -6,3 +6,27 @@
     <ion-title>all-sensor</ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content overflow-scroll="false" scroll-y="false" >
+
+  <ion-grid>
+
+    <ion-row class="row-card">
+
+      <ion-col size="6" class="col-card shadow-2xl " *ngFor="let sensor of sensors ">
+
+        <ion-card class="card-service  ">
+          <ion-img alt=""  src="../../assets/images/{{sensor.img}}" class="img-service h-" > </ion-img>
+          <ion-label class="ion-t" >  {{sensor.valeur}}</ion-label>
+        </ion-card>
+
+      </ion-col>
+
+
+
+
+    </ion-row>
+  </ion-grid>
+
+
+
+</ion-content>

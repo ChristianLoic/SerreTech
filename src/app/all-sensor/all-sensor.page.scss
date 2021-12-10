@@ -3,3 +3,50 @@
   --background: #015C5B;
   --color: white;
 }
+
+
+.row-card{
+  padding: 0 5px 0 5px;
+
+
+  .col-card{
+
+
+    border-radius: 30%;
+    background-color: transparent;
+
+    .card-service{
+      margin: 0;
+      height: 150px;
+      border-radius: 30%;
+      padding: 15px;
+      box-shadow: 0 0;
+      background-color: white;
+
+
+
+      .img-service{
+        height: 70%;
+        width: 100%;
+        object-fit: contain;
+        margin: 0 auto;
+        border: 0 solid ;
+        background-color: transparent;   /* gradient en arriere*/
+        border-radius: 30%;           /* equivalent de rounded sur tailwind  */
+        padding: 15px;
+        font-weight: lighter;
+      }
+      .ion-t {
+
+        background-color: transparent;
+        padding-left: 50%;
+        font-weight: bolder;
+
+
+
+
+      }
+    }
+  }
+}
+

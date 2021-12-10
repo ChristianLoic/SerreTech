@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { sensors } from '../sensors';
 
 @Component({
   selector: 'app-all-sensor',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./all-sensor.page.scss'],
 })
 export class AllSensorPage implements OnInit {
+
+
+  sensors = sensors;
 
   constructor() { }
 

@@ -34,11 +34,12 @@
              </span>-->
             <ion-icon name="person" class="text-green-900"></ion-icon>
           </div>
-          <input
+          <ion-input
             type="text"
             class="flex-1 w-px px-3 font-bold bg-transparent border-0 rounded rounded-l-none outline-none  text-vertBill border-grey-light"
             placeholder="EMAIL "
-          />
+          >
+          </ion-input>
         </div>
         <div class="relative flex flex-wrap items-center w-5/6 pr-10 mb-6 bg-green-100 rounded-lg h-1/5">
           <div class="flex justify-center w-1/6 -mr-px ">
@@ -49,11 +50,12 @@
                 </span>-->
             <ion-icon name="key" class=""></ion-icon>
           </div>
-          <input
+          <ion-input
             type="password"
             class="relative self-center flex-1 w-px px-3 text-xl font-bold leading-normal bg-transparent outline-none "
             placeholder="......"
-          />
+          >
+          </ion-input>
           <!--<div class="flex w-5 -mr-px ">
               <span
                 class="flex items-center px-3 leading-normal text-gray-600 whitespace-no-wrap bg-transparent border-0 rounded rounded-l-none"
@@ -67,7 +69,7 @@
         <div class="flex flex-wrap items-center justify-center w-full h-3/6 " >
 
 
-          <input  type="submit" value="Se connecter" class="w-1/2 transition-colors duration-500 transform bg-green-100 rounded-lg h-1/4 text-vertBill hover:bg-yellow-700 hover:text-gray-100 " routerDirection="root" [routerLink]="['/serres']"  >
+          <ion-button  type="submit"  class="w-1/2 transition-colors duration-500 transform bg-green-100 rounded-lg h-1/4 text-vertBill hover:bg-yellow-700 hover:text-gray-100 " routerDirection="root" [routerLink]="['/serres']"  > connexion </ion-button>
 
 
         </div>
