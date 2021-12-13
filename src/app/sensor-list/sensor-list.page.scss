@@ -140,10 +140,12 @@ p b {
         object-fit: contain;
         margin: 0 auto;
         border: 0 solid ;
-        background-color: #015C5B;   /* gradient en arriere*/
+        background-color: #f5f8f8;
+        //background-color: #015C5B;   /* gradient en arriere*/
         border-radius: 30%;           /* equivalent de rounded sur tailwind  */
         padding: 15px;
         font-weight: lighter;
+
 
       }
       .ion-t {
