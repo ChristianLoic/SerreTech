@@ -55,20 +55,20 @@
 
   </ion-grid>
 </div>
-  <div class="flex flex-wrap justify-center items-center w-full h-1/6 items-center justify-center  ">
+ <!-- <div class="flex flex-wrap justify-center items-center w-full h-1/6 items-center justify-center  ">
 
     <input  type="submit" value="carte" class="w-1/2 transition-colors duration-500 transform shadow-2xl text-yellow-700 rounded-lg h-1/2 text-vertBill hover:bg-yellow-700 hover:text-gray-100 " [routerLink]="['/map']"  >
 
 
-  </div>
+  </div>-->
   <div  class="flex flex-wrap justify-center items-center w-full h-1/6 items-center justify-center  " >
 
    <ion-text> <h1> liste des capteurs </h1></ion-text>
   </div>
   <div class=" w-full  ">
-    <ion-grid>
 
-      <ion-row class="row-card">
+
+
         <!--<ion-col size="6" class="col-card shadow-2xl ">
           <ion-card class="card-service">
             <ion-img alt="" src="../../assets/images/soleil.png" class="img-service" ></ion-img>
@@ -93,17 +93,43 @@
             <ion-label class="ion-t" > 20 F</ion-label>
           </ion-card>
         </ion-col>-->
-        <ion-col size="6" class="col-card "  *ngFor="let ages of Ages ">
+     <!--   <ion-col size="6" class="col-card "  *ngFor="let ages of Ages ">
           <ion-button style="" shape="round" color="white" class="hidden-button  " [routerLink]="['/sensors/1']">
             <ion-card class="card-service  ">
               <ion-img alt=""  src="../../assets/images/{{ages.img}}" class="img-service " > </ion-img>
               <ion-label class="ion-t" >  {{ages.value}}</ion-label>
             </ion-card>
           </ion-button>
-        </ion-col>
+        </ion-col>-->
+        <ion-slides class="w-full">
+        <ng-container *ngFor="let sensor of sensors"  class="w-full ">
+          <ion-slide *ngIf="sensor.idSerre==serre.idSerre" class="w-full justify-items-center">
+            {{sensor.valeur}}
+            {{sensor.description}}
+            <ion-col size="6" class=" slide col-card  justify-items-center "  >
+                <ng-container class="hidden-button  " >
+                <ion-card class="card-service"   *ngIf="sensor.description =='humidite air'" >
+                  <ion-img alt=""  src="../../assets/images/capteur%20humidité%20air.png" class="img-service " > </ion-img>
+                </ion-card>
 
-      </ion-row>
+                  <ion-card class="card-service"   *ngIf="sensor.description =='humidite sol'" >
+                    <ion-img alt=""  src="../../assets/images/capteur%20humidité%20sol.png" class="img-service " > </ion-img>
+                  </ion-card>
 
-    </ion-grid>
+                  <ion-card class="card-service"   *ngIf="sensor.description =='luminosite'" >
+                    <ion-img alt=""  src="../../assets/images/capteur%20luminosité.png" class="img-service " > </ion-img>
+                  </ion-card>
+
+                  <ion-card class="card-service"   *ngIf="sensor.description =='temperature'" >
+                    <ion-img alt=""  src="../../assets/images/capteur%20température.png" class="img-service  " > </ion-img>
+                  </ion-card>
+              </ng-container>
+            </ion-col>
+          </ion-slide>
+        </ng-container>
+        </ion-slides>
+
+
+
   </div>
 </ion-content>

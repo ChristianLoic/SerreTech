@@ -20,6 +20,11 @@ export class SensorListPage implements OnInit {
   serre : Serre | undefined;
   Ages: {  value : number ,name: string , img :string}[];
 
+  slideOpts = {
+    initialSlide: 1,
+    speed: 400,
+  };
+
 
   constructor(private route: ActivatedRoute) { }
 
