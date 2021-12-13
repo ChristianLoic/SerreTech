@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import "tailwindcss/tailwind.css";
+import 'tailwindcss/tailwind.css';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +21,7 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'Login',
+      title: 'login',
       url: '/login',
       icon: 'person'
     },
@@ -48,6 +48,10 @@ export class AppComponent {
     private splashScreen: SplashScreen,
   ) {
     this.initializeApp();
+  }
+
+  GoWiki() {
+    window.location.href='https://wiki.pcst.xyz';
   }
 
   initializeApp() {

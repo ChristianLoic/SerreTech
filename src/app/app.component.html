@@ -13,10 +13,16 @@
           <ion-note>                           </ion-note>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let pages of Pages; let i = index">
-            <ion-item (click)="activeIndex = i" routerDirection="root" [routerLink]="[pages.url]" lines="none"
-                      detail="false" [class.selected]="activeIndex == i">
+            <ion-item routerDirection="root" [routerLink]="[pages.url]" lines="none"
+                      detail="false">
               <ion-icon slot="start" [ios]="pages.icon + '-outline'" [md]="pages.icon + '-sharp'"></ion-icon>
               <ion-label>{{ pages.title }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle  auto-hide="false">
+            <ion-item (click)="GoWiki()" lines="none" detail="false">
+              <ion-icon slot="start" name="book-outline"></ion-icon>
+              <ion-label>wiki</ion-label>
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
