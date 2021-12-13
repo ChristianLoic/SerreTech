@@ -18,7 +18,7 @@ export class SensorListPage implements OnInit {
   sensors = sensors;
   serres = serres;
   serre : Serre | undefined;
-  Ages: { value : number ,name: string , img :string}[];
+  Ages: {  value : number ,name: string , img :string}[];
 
 
   constructor(private route: ActivatedRoute) { }

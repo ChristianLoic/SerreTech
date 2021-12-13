@@ -12,13 +12,13 @@
 
     <ion-row class="row-card">
 
-      <ion-col size="6" class="col-card shadow-2xl " *ngFor="let sensor of sensors ; let i = index">
-
+      <ion-col size="6" class="col-card  " *ngFor="let sensor of sensors ; let i = index">
+        <ion-button style="" shape="round" color="white" class="hidden-button  "  [routerLink]="['/sensors/{{sensor.idSensor}}']">
         <ion-card class="card-service  ">
           <ion-img alt=""  src="../../assets/images/{{sensor.img}}" class="img-service h-" > </ion-img>
           <ion-label class="ion-t" >  {{sensor.valeur}}</ion-label>
         </ion-card>
-
+        </ion-button>
       </ion-col>
 
 

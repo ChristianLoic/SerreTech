@@ -20,7 +20,7 @@ const routes: Routes = [
     loadChildren: () => import('./map/map.module').then( m => m.MapPageModule)
   },
   {
-    path: 'sensors/:idSerre',
+    path: 'sensors/:idSensor',
     loadChildren: () => import('./sensor-details/sensor-details.module').then( m => m.SensorDetailsPageModule)
   },
   {

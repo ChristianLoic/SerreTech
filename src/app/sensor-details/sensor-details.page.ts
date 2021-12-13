@@ -15,14 +15,17 @@ export class SensorDetailsPage implements OnInit {
 
   sensor: Sensor | undefined;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute , private http: HttpClient) { }
 
-  ngOnInit() {
+  ngOnInit()
+  {
     const routeParams = this.route.snapshot.paramMap;
     const sensorIdFromRoute = Number(routeParams.get('idSensor'));
 
     // Find the sensor that correspond with the id provided in route.
     this.sensor = sensors.find(sensor => sensor.idSensor === sensorIdFromRoute);
+
+
   }
 
 

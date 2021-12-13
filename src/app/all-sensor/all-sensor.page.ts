@@ -13,7 +13,12 @@ export class AllSensorPage implements OnInit {
 
   constructor() { }
 
+
+
+
   ngOnInit() {
+
+
   }
 
 }

@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content overflow-scroll="false" >
+<ion-content scroll-y="true" >
   <div class=" label  w-full h-1/6 flex items-center justify-center font-bold  ">
 
    <h1> SERRE #{{serre.idSerre}} </h1>
@@ -42,10 +42,10 @@
           <ion-label class="ion-t" > 20 F</ion-label>
         </ion-card>
       </ion-col>-->
-      <ion-col size="6" class="col-card " *ngFor="let ages of Ages ">
-        <ion-button style="" shape="round"  class="hidden-button">
+      <ion-col size="6" class="col-card "  *ngFor="let ages of Ages ">
+        <ion-button style="" shape="round" color="white" class="hidden-button  " [routerLink]="['/sensors/1']">
         <ion-card class="card-service  ">
-          <ion-img alt=""  src="../../assets/images/{{ages.img}}" class="img-service h-" > </ion-img>
+          <ion-img alt=""  src="../../assets/images/{{ages.img}}" class="img-service " > </ion-img>
           <ion-label class="ion-t" >  {{ages.value}}</ion-label>
         </ion-card>
         </ion-button>
@@ -61,5 +61,49 @@
 
 
   </div>
+  <div  class="flex flex-wrap justify-center items-center w-full h-1/6 items-center justify-center  " >
 
+   <ion-text> <h1> liste des capteurs </h1></ion-text>
+  </div>
+  <div class=" w-full  ">
+    <ion-grid>
+
+      <ion-row class="row-card">
+        <!--<ion-col size="6" class="col-card shadow-2xl ">
+          <ion-card class="card-service">
+            <ion-img alt="" src="../../assets/images/soleil.png" class="img-service" ></ion-img>
+            <ion-label class="ion-t"> 20 F</ion-label>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6" class="col-card shadow-2xl">
+          <ion-card class="card-service ">
+            <ion-img alt="" src="../../assets/images/thermometre.png" class="img-service" ></ion-img>
+            <ion-label class="ion-t"> 20 F</ion-label>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6" class="col-card shadow-2xl">
+          <ion-card class="card-service ">
+            <ion-img  alt="" src="../../assets/images/goutte.png" class="img-service " ></ion-img>
+            <ion-label class="ion-t"> 20 F</ion-label>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6" class="col-card shadow-2xl">
+          <ion-card class="card-service  ">
+            <ion-img alt=""  src="../../assets/images/goutte.png" class="img-service h-" > </ion-img>
+            <ion-label class="ion-t" > 20 F</ion-label>
+          </ion-card>
+        </ion-col>-->
+        <ion-col size="6" class="col-card "  *ngFor="let ages of Ages ">
+          <ion-button style="" shape="round" color="white" class="hidden-button  " [routerLink]="['/sensors/1']">
+            <ion-card class="card-service  ">
+              <ion-img alt=""  src="../../assets/images/{{ages.img}}" class="img-service " > </ion-img>
+              <ion-label class="ion-t" >  {{ages.value}}</ion-label>
+            </ion-card>
+          </ion-button>
+        </ion-col>
+
+      </ion-row>
+
+    </ion-grid>
+  </div>
 </ion-content>

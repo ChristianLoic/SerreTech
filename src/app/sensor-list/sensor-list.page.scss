@@ -41,6 +41,7 @@ color: #F77F00 ;
         height: 100%;
         width: 100%;
         object-fit: fill;
+        border-radius: 50%;
 
 
     .card-service{
@@ -50,7 +51,7 @@ color: #F77F00 ;
       border-radius: 30%;
       padding: 0px;       /* joue la dedans si tu veux modifier la grosseur du logo  */
       box-shadow: 0 0;
-      background-color: white;
+      background-color: transparent;
 
 
 
