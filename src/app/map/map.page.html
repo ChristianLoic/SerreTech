@@ -4,5 +4,73 @@
       <ion-menu-button autoHide="false" class="new-background-color"></ion-menu-button>
     </ion-buttons>
     <ion-title>map</ion-title>
+
   </ion-toolbar>
+  <ion-toolbar class="new-background-color">
+    <ion-searchbar placeholder="recherche" class="searchBAR"></ion-searchbar>
+  </ion-toolbar>
+
 </ion-header>
+<ion-content class="  ">
+
+  <ion-card *ngFor="let zone of zones" id="listcard"   >
+    <div class="">
+      <ion-card-header>
+        <ion-card-subtitle>
+          <h1>
+            Zone #{{zone.idZone}}       {{zone.typeFood}}
+
+          </h1>
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-grid >
+            <ion-row>
+              <ion-col size="3" class="justify-center flex flex-wrap ">
+
+                <div class=" flex w-full  justify-center items-center   ">
+                  <img src="../../assets/images/soleil.png" class="object-contain" alt="serre">
+                </div>
+                <div>
+                  {{zone.temperature}}
+                </div>
+              </ion-col>
+              <ion-col size="3" class=" justify-center flex flex-wrap ">
+
+                <div class=" flex w-1/2  justify-center items-center   ">
+                  <img src="../../assets/images/thermometre.png" class="" alt="serre">
+                </div>
+                <div>
+                  {{zone.temperature}}
+                </div>
+
+              </ion-col>
+
+              <ion-col size="3" class=" justify-center flex flex-wrap ">
+
+                <div class=" flex w-1/2  justify-center items-center   ">
+                  <img src="../../assets/images/goutte.png" class="" alt="serre">
+                </div>
+                <div>
+                  {{zone.temperature}}
+                </div>
+              </ion-col>
+              <ion-col size="3" class=" justify-center flex flex-wrap ">
+
+                <div class=" flex w-1/2  justify-center items-center   ">
+                  <img src="../../assets/images/goutte.png" class="object-contain" alt="serre">
+                </div>
+                <div>
+                  {{zone.temperature}}
+                </div>
+              </ion-col>
+            </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </div>
+  </ion-card >
+
+
+
+
+</ion-content>

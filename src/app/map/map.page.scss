@@ -2,3 +2,21 @@
   --background: #015C5B;
   --color: white;
 }
+ion-card {
+  border: 5px solid #015C5B;
+}
+.img-service{
+
+  object-fit: contain;
+  margin: 0 auto;
+  border: 0 solid ;
+
+  //background-color: #015C5B;   /* gradient en arriere*/
+            /* equivalent de rounded sur tailwind  */
+
+ }
+.searchBAR
+{
+  --background: #015C5B;
+  color: #ffffff;
+}
