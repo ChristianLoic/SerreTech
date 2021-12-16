@@ -16,7 +16,7 @@ export class AppComponent {
 
   Pages = [
     {
-      title: 'home',
+      title: 'Home',
       url: '',
       icon: 'home'
     },
@@ -26,17 +26,17 @@ export class AppComponent {
       icon: 'person'
     },
     {
-      title: 'les capteurs',
+      title: 'Liste capteurs',
       url: '/all-sensor',
       icon: 'grid'
     },
     {
-      title: 'les serres',
+      title: 'Liste serres',
       url: '/serres',
       icon: 'list'
     },
     {
-      title: 'les zones',
+      title: 'Liste zones',
       url: '/map',
       icon: 'map'
     }
@@ -55,6 +55,10 @@ export class AppComponent {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
+  }
+
+  GoWiki() {
+    window.location.href='https://wiki.pcst.xyz';
   }
 
 }
