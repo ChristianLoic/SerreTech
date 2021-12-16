@@ -18,7 +18,7 @@ export class SensorListPage implements OnInit {
   sensors = sensors;
   serres = serres;
   serre : Serre | undefined;
-  Ages: {  value : number ,name: string , img :string}[];
+  Items: {  value : number ,name: string , img :string}[];
 
   slideOpts = {
     initialSlide: 1,
@@ -37,7 +37,7 @@ export class SensorListPage implements OnInit {
           // Find the product that correspond with the id provided in route.
           this.serre = serres.find(serre => serre.idSerre === serreIdFromRoute);
 
-            this.Ages = [
+            this.Items = [
                               {
                                 value: this.serre.luminosite,
                                 name: 'luminosite',

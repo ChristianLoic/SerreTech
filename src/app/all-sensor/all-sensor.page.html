@@ -9,29 +9,19 @@
 <ion-content  scroll-y="true" >
 
   <ion-grid>
-
     <ion-row class="row-card">
-
       <ion-col size="6" class="col-card  shadow-2xl " *ngFor="let sensor of sensors ; let i = index">
         <ion-button style="" shape="round" color="white" class="hidden-button   "  >
         <ion-card class="card-service  ">
-<!--
-          <ion-img alt=""  src="../../assets/images/{{sensor.img}}" class="img-service h-" > </ion-img>
--->
           <ion-img alt="" *ngIf="sensor.description =='humidite air'" src="../../assets/images/capteur%20humidité%20air.png" class="img-service " > </ion-img>
           <ion-img alt="" *ngIf="sensor.description =='humidite sol'" src="../../assets/images/capteur%20humidité%20sol.png" class="img-service " > </ion-img>
           <ion-img alt="" *ngIf="sensor.description =='luminosite'" src="../../assets/images/capteur%20luminosité.png" class="img-service " > </ion-img>
           <ion-img alt=""  *ngIf="sensor.description =='temperature'"   src="../../assets/images/capteur%20température.png" class="img-service " > </ion-img>
-
           <ion-label class="ion-t" >  {{sensor.valeur}}</ion-label>
         </ion-card>
         </ion-button>
       </ion-col>
-
-
-
-
-    </ion-row>
+  </ion-row>
   </ion-grid>
 
 

@@ -19,11 +19,11 @@
 
     <ion-row class="row-card">
 
-      <ion-col size="6" class="col-card  shadow-2xl"  *ngFor="let ages of Ages ">
+      <ion-col size="6" class="col-card  shadow-2xl"  *ngFor="let item of Items ">
         <ion-button style="" shape="round" color="white" class="hidden-button  " [routerLink]="['/sensors/1']">
         <ion-card class="card-service  ">
-          <ion-img alt=""  src="../../assets/images/{{ages.img}}" class="img-service " > </ion-img>
-          <ion-label class="ion-t" >  {{ages.value}}</ion-label>
+          <ion-img alt=""  src="../../assets/images/{{item.img}}" class="img-service " > </ion-img>
+          <ion-label class="ion-t" >  {{item.value}}</ion-label>
         </ion-card>
         </ion-button>
       </ion-col>
@@ -32,12 +32,7 @@
 
   </ion-grid>
 </div>
- <!-- <div class="flex flex-wrap justify-center items-center w-full h-1/6 items-center justify-center  ">
 
-    <input  type="submit" value="carte" class="w-1/2 transition-colors duration-500 transform shadow-2xl text-yellow-700 rounded-lg h-1/2 text-vertBill hover:bg-yellow-700 hover:text-gray-100 " [routerLink]="['/map']"  >
-
-
-  </div>-->
   <div  class="flex flex-wrap justify-center items-center w-full h-1/6 items-center justify-center  " >
 
    <ion-text>
@@ -46,9 +41,6 @@
    </ion-text>
   </div>
   <div class=" w-full  ">
-
-
-
 
         <ion-slides class="w-full">
         <ng-container *ngFor="let sensor of sensors"  class="w-full shadow-2xl ">
