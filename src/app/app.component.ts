@@ -26,17 +26,17 @@ export class AppComponent {
       icon: 'person'
     },
     {
-      title: 'all-sensor',
+      title: 'les capteurs',
       url: '/all-sensor',
       icon: 'grid'
     },
     {
-      title: 'serre-list',
+      title: 'les serres',
       url: '/serres',
       icon: 'list'
     },
     {
-      title: 'map',
+      title: 'les zones',
       url: '/map',
       icon: 'map'
     }

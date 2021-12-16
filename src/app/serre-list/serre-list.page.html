@@ -3,11 +3,11 @@
     <ion-buttons slot="start" >
       <ion-menu-button autoHide="false" class="new-background-color"></ion-menu-button>
     </ion-buttons>
-    <ion-title>serre-list</ion-title>
+    <ion-title>les serres</ion-title>
     <ion-icon slot="icon-only" name="leaf-outline"></ion-icon>
   </ion-toolbar>
 </ion-header>
-<ion-content scroll-y="false"  >
+<ion-content >
 <ion-card *ngFor="let serre of serres" id="listcard"   >
  <div class="">
   <ion-card-header>
@@ -28,9 +28,7 @@
    <div class="w-full h-1/2 flex  ">
                      <img src="../../assets/images/serre.png" class="object-contain" alt="serre">
                     </div>
-
-
-                  <div class=" flex h-1/2 justify-center items-center">
+                      <div class=" flex h-1/2 justify-center items-center">
                   <ion-col class=" ">
 
                      <button
@@ -40,15 +38,10 @@
 
                   </ion-col>
                   </div>
-
-
-
-             </div>
-
+            </div>
               </ion-col>
               <ion-col >
                 <div class=" h-full w-full">
-
                     <ion-row>
                       <ion-col size="6" >
                               <div class="w-full h-full flex ">
@@ -56,7 +49,6 @@
                       </div>
                       </ion-col>
                       <ion-col size="6">
-
                        <div class=" flex w-1/2 justify-center items-center   ">
                         <img src="../../assets/images/thermometre.png" class="object-contain flex items-center w-full" alt="serre">
                       </div>
@@ -76,29 +68,9 @@
                     </ion-row>
                 </div>
                   </ion-col>
-
            </ion-row>
      </ion-grid>
   </ion-card-content>
  </div>
   </ion-card >
-
-
-    <!--
-
-
-        <ion-grid>
-          <ion-row>
-            <ion-col sizeLg="4" sizeMd="4" sizeXs="12" *ngFor="let serre of serres" id="listcard">
-              <ion-card class="ion-justify-content-around" >
-                serre # {{serre.idSerre}}
-              </ion-card>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-
-
-      -->
-
-
-  </ion-content>
+ </ion-content>
